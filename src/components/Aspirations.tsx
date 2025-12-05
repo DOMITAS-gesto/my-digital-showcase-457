@@ -34,7 +34,7 @@ const Aspirations = () => {
           {/* Section header */}
           <div className="text-center mb-16">
             <span className="text-primary font-medium tracking-wider uppercase text-sm">Sueños</span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mt-4">Mis Aspiraciones</h2>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mt-4 text-navy">Mis Aspiraciones</h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
               Cada meta es un paso hacia la persona que quiero ser
             </p>
@@ -43,7 +43,7 @@ const Aspirations = () => {
           {/* Timeline */}
           <div className="relative">
             {/* Vertical line */}
-            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-accent to-primary/20" />
+            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-accent to-gold" />
 
             <div className="space-y-12">
               {aspirations.map((aspiration, index) => (
@@ -55,10 +55,10 @@ const Aspirations = () => {
                 >
                   {/* Content */}
                   <div className={`flex-1 ${index % 2 === 0 ? "md:text-right" : "md:text-left"}`}>
-                    <div className={`bg-card-gradient rounded-2xl p-8 border border-border shadow-card hover:border-primary/30 transition-all duration-300 ${
+                    <div className={`bg-card-gradient rounded-2xl p-8 border border-border shadow-card hover:border-primary/50 transition-all duration-300 ${
                       index % 2 === 0 ? "md:mr-8" : "md:ml-8"
                     }`}>
-                      <h3 className="font-serif text-2xl font-semibold mb-3 flex items-center gap-3 justify-center md:justify-start">
+                      <h3 className="font-serif text-2xl font-semibold mb-3 flex items-center gap-3 justify-center md:justify-start text-navy">
                         {index % 2 !== 0 && <aspiration.icon className="w-6 h-6 text-primary" />}
                         {aspiration.title}
                         {index % 2 === 0 && <aspiration.icon className="w-6 h-6 text-primary md:order-first" />}
@@ -69,7 +69,7 @@ const Aspirations = () => {
 
                   {/* Center icon */}
                   <div className="hidden md:flex relative z-10">
-                    <div className="w-12 h-12 rounded-full bg-background border-2 border-primary flex items-center justify-center shadow-glow">
+                    <div className="w-12 h-12 rounded-full bg-card border-2 border-primary flex items-center justify-center shadow-glow">
                       <Sparkles className="w-5 h-5 text-primary" />
                     </div>
                   </div>

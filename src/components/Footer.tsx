@@ -6,8 +6,8 @@ const Footer = () => {
     <footer className="py-12 border-t border-border">
       <div className="container px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <img src={logoImg} alt="LUMINA" className="h-12 w-auto mx-auto mb-4" />
-          <h3 className="font-serif text-xl font-semibold mb-4">
+          <img src={logoImg} alt="Logo" className="h-20 w-auto mx-auto mb-6" />
+          <h3 className="font-serif text-xl font-semibold mb-4 text-navy">
             Juan Diego <span className="text-gradient">Prieto Castaño</span>
           </h3>
           
