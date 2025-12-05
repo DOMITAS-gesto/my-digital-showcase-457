@@ -7,17 +7,18 @@ const Hero = () => {
       <div className="absolute inset-0 bg-hero-gradient" />
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold/5 rounded-full blur-3xl" />
       
       <div className="container relative z-10 px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="animate-fade-up inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border mb-8">
-            <Sparkles className="w-4 h-4 text-primary" />
+          <div className="animate-fade-up inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border mb-8 shadow-sm">
+            <Sparkles className="w-4 h-4 text-gold" />
             <span className="text-sm font-medium text-muted-foreground">Explorando nuevos horizontes</span>
           </div>
 
           {/* Name */}
-          <h1 className="animate-fade-up animate-delay-100 text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-6">
+          <h1 className="animate-fade-up animate-delay-100 text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 text-navy">
             Juan Diego{" "}
             <span className="text-gradient">Prieto</span>
           </h1>
@@ -43,7 +44,7 @@ const Hero = () => {
           {/* Scroll indicator */}
           <div className="animate-fade-up animate-delay-500 mt-16">
             <div className="animate-float">
-              <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 mx-auto flex justify-center pt-2">
+              <div className="w-6 h-10 rounded-full border-2 border-navy/30 mx-auto flex justify-center pt-2">
                 <div className="w-1.5 h-3 bg-primary rounded-full animate-pulse" />
               </div>
             </div>

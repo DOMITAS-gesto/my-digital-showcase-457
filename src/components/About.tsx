@@ -3,14 +3,14 @@ import { GraduationCap, Brain, Heart } from "lucide-react";
 const About = () => {
   return (
     <section id="sobre-mi" className="py-24 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/30 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
       
       <div className="container relative z-10 px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
           <div className="text-center mb-16">
             <span className="text-primary font-medium tracking-wider uppercase text-sm">Conóceme</span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mt-4">Sobre Mí</h2>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mt-4 text-navy">Sobre Mí</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -18,7 +18,7 @@ const About = () => {
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Soy un joven colombiano con una mente curiosa y un corazón lleno de sueños. 
-                Estudié cuatro semestres de <span className="text-foreground font-medium">Ingeniería de Sistemas</span> en 
+                Estudié cuatro semestres de <span className="text-navy font-medium">Ingeniería de Sistemas</span> en 
                 la Unidad Central del Valle (Uceva), pero decidí buscar un camino más alineado con mis verdaderas pasiones.
               </p>
               
@@ -37,37 +37,37 @@ const About = () => {
 
             {/* Cards */}
             <div className="space-y-4">
-              <div className="bg-card-gradient rounded-2xl p-6 border border-border shadow-card hover:border-primary/30 transition-colors">
+              <div className="bg-card-gradient rounded-2xl p-6 border border-border shadow-card hover:border-primary/50 transition-colors">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-xl bg-primary/10">
                     <GraduationCap className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-serif text-xl font-semibold mb-2">Formación</h3>
+                    <h3 className="font-serif text-xl font-semibold mb-2 text-navy">Formación</h3>
                     <p className="text-muted-foreground">Ing. de Sistemas (Uceva) → Explorando Animación 3D</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-card-gradient rounded-2xl p-6 border border-border shadow-card hover:border-accent/30 transition-colors">
+              <div className="bg-card-gradient rounded-2xl p-6 border border-border shadow-card hover:border-accent/50 transition-colors">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-xl bg-accent/10">
                     <Brain className="w-6 h-6 text-accent" />
                   </div>
                   <div>
-                    <h3 className="font-serif text-xl font-semibold mb-2">Actualmente</h3>
+                    <h3 className="font-serif text-xl font-semibold mb-2 text-navy">Actualmente</h3>
                     <p className="text-muted-foreground">Bootcamp de Inteligencia Artificial</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-card-gradient rounded-2xl p-6 border border-border shadow-card hover:border-primary/30 transition-colors">
+              <div className="bg-card-gradient rounded-2xl p-6 border border-border shadow-card hover:border-gold/50 transition-colors">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-primary/10">
-                    <Heart className="w-6 h-6 text-primary" />
+                  <div className="p-3 rounded-xl bg-gold/10">
+                    <Heart className="w-6 h-6 text-gold" />
                   </div>
                   <div>
-                    <h3 className="font-serif text-xl font-semibold mb-2">Valores</h3>
+                    <h3 className="font-serif text-xl font-semibold mb-2 text-navy">Valores</h3>
                     <p className="text-muted-foreground">Familia, curiosidad y perseverancia</p>
                   </div>
                 </div>
