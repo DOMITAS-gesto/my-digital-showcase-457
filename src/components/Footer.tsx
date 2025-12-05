@@ -1,11 +1,13 @@
 import { Heart, MapPin } from "lucide-react";
+import logoImg from "@/assets/logo.png";
 
 const Footer = () => {
   return (
     <footer className="py-12 border-t border-border">
       <div className="container px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="font-serif text-2xl font-semibold mb-4">
+          <img src={logoImg} alt="LUMINA" className="h-12 w-auto mx-auto mb-4" />
+          <h3 className="font-serif text-xl font-semibold mb-4">
             Juan Diego <span className="text-gradient">Prieto Castaño</span>
           </h3>
           

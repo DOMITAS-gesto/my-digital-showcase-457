@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logoImg from "@/assets/logo.png";
 
 const navLinks = [
   { href: "#sobre-mi", label: "Sobre Mí" },
   { href: "#hobbies", label: "Hobbies" },
+  { href: "#productos", label: "Productos" },
   { href: "#aspiraciones", label: "Aspiraciones" },
 ];
 
@@ -28,8 +30,8 @@ const Navigation = () => {
       <div className="container px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="font-serif text-xl font-semibold">
-            JD<span className="text-primary">.</span>
+          <a href="#" className="flex items-center">
+            <img src={logoImg} alt="LUMINA" className="h-10 md:h-12 w-auto" />
           </a>
 
           {/* Desktop nav */}
